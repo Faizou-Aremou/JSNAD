@@ -5,3 +5,7 @@ console.log(sayHiTo('Dave')) // prints 'Hello Dave'
 console.log(sayHiTo('Annie')) // prints 'Hello Annie'
 console.log(sayByeTo('Dave')) // prints 'Goodbye Dave'
 
+function prefixer(prefix){
+   return (text)=> prefix + text
+}
+
