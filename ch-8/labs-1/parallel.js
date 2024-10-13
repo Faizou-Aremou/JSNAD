@@ -20,3 +20,6 @@ const opC = (cb) => {
     cb(null, 'C')
   }, 125)
 }
+opC(print)
+opB(print)
+opA(print)
