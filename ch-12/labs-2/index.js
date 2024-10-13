@@ -4,7 +4,7 @@ const assert = require('assert')
 const createWritable = () => {
   const sink = []
   const writable = new Writable({
-    write(chunk, enc, cb) {
+    write (chunk, enc, cb) {
       sink.push(chunk.toString())
       cb()
     }
@@ -15,7 +15,7 @@ const createWritable = () => {
 const readable = Readable.from(['a', 'b', 'c'])
 const writable = createWritable()
 
-// TODO: replace the pass through stream 
+// TODO: replace the pass through stream
 // with a transform stream that uppercases
 // incoming characters
 const transform = new PassThrough()

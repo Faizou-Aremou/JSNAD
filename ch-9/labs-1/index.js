@@ -17,5 +17,3 @@ function listener () {
   }, 250)
 }
 ee.once('tick', listener)
-
-

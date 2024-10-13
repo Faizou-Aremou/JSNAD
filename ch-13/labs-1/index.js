@@ -3,7 +3,7 @@ const assert = require('assert')
 const { join, basename } = require('path')
 const fs = require('fs')
 const project = join(__dirname, 'project')
-try { fs.rmdirSync(project, {recursive: true}) } catch (err) {}
+try { fs.rmdirSync(project, { recursive: true }) } catch (err) {}
 const files = Array.from(Array(5), () => {
   return join(project, Math.random().toString(36).slice(2))
 })

@@ -8,10 +8,9 @@ async function read (file) {
   return content
 }
 
-
 async function check () {
   await assert.rejects(
-    read('not-a-valid-filepath'), 
+    read('not-a-valid-filepath'),
     new Error('failed to read')
   )
   assert.deepEqual(

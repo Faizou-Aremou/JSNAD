@@ -10,11 +10,11 @@ const createWritable = () => {
   })
   const writable = new Writable({
     decodeStrings: false,
-    write(chunk, enc, cb) {
+    write (chunk, enc, cb) {
       sink.push(chunk)
       cb()
     },
-    final() {
+    final () {
       console.log('passed!')
     }
   })

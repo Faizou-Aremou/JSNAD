@@ -4,5 +4,5 @@ console.log('Process ID', os.platform())
 setInterval(() => {
 }, 5000)
 setTimeout(() => {
-process.exit(1)
+  process.exit(1)
 }, 0)
