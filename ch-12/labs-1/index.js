@@ -25,5 +25,5 @@ const createWritable = () => {
 }
 const readable = Readable.from(['a', 'b', 'c'])
 const writable = createWritable()
-
+readable.pipe(writable)
 // TODO - send all data from readable to writable:
