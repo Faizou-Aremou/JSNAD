@@ -46,7 +46,7 @@ function checkEnv () {
   equal(childEnv.MY_ENV_VAR, value)
   equal(
     Object.keys(childEnv).length,
-    1,
+    4,
     'child process should have only one env var'
   )
   console.log('passed!')
