@@ -22,6 +22,8 @@
   },
   "devDependencies": {
     "@types/ndjson": "^2.0.4",
+    "chai": "^5.1.2",
+    "mocha": "^10.8.2",
     "standard": "^17.1.2",
     "tape": "^5.9.0"
   }
