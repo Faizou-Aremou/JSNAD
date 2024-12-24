@@ -16,6 +16,10 @@ const out = join(__dirname, 'out.txt')
 function exercise () {
   // TODO read the files in the project folder
   // and write the to the out.txt file
+  const filesr = fs.readdirSync(project);
+  filesr.forEach((filename,i)=> {
+    fs.writeFileSync(out, filename+`${i===filesr.length-1?'':','}`, {flag:"a"})
+  })
 }
 
 exercise()
